@@ -64,7 +64,7 @@ section+section{border-top:1px solid var(--linha)}
 @media(prefers-reduced-motion:reduce){.filtros button{transition:none}.filtros button:hover{transform:none}}
 .grade{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 @media(max-width:899px){.grade{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
-@media(max-width:559px){.grade{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:559px){.grade{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}}
 .card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--linha);border-radius:20px;overflow:hidden;box-shadow:0 1px 2px rgba(20,20,20,.04);transition:transform .25s,box-shadow .25s,border-color .25s}
 .card:hover{transform:translateY(-4px);border-color:#d9d4c2;box-shadow:0 16px 32px rgba(20,20,20,.1)}
 @media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
@@ -117,6 +117,16 @@ footer .copy{margin-top:36px;text-align:center;font-size:12px;color:#77766f}
 .zap svg{width:28px;height:28px}
 @media(prefers-reduced-motion:no-preference){.zap{transition:transform .2s}.zap:hover{transform:scale(1.08)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media(max-width:559px){
+.card{border-radius:12px}
+.placa img{padding:6px}
+.pontos{bottom:4px;gap:5px}.pontos button{width:8px;height:8px}
+.corpo{padding:8px 8px 10px;gap:4px}
+.cat{font-size:8px;letter-spacing:.12em}
+.card h3{font-size:12px;line-height:1.25;min-height:0;overflow-wrap:anywhere}
+.card dl{display:none}
+.card .btn{min-height:34px;padding:0 6px;font-size:11px;line-height:1.1;text-align:center;white-space:normal}
+}
 </style>
 </head>
 <body>
